@@ -1,0 +1,10 @@
+   ls
+   mkdir golangdockertest
+   cd golangdockertest/
+   vi hello.go
+   vi go.mod
+   vi Dockerfile
+   
+   sudo snap install docker
+   sudo docker build -t golangdockertest  .
+   sudo docker run -p 8080:8080  -tid golangdockertest
