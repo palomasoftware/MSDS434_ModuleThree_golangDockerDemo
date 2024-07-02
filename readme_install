@@ -3,6 +3,7 @@
 # check security rules! 
 sudo snap install docker
 vi main.go
+vi go.mod
 vi Dockerfile
 sudo docker build -t golangdockertest  .
 sudo docker run -p 8080:8080  -tid golangdockertest
