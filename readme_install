@@ -1,0 +1,35 @@
+# launch a 'new' t2 'free tier' instance
+# golang install not necessary with docker definition
+# check security rules! 
+sudo snap install docker
+vi main.go
+vi Dockerfile
+sudo docker build -t golangdockertest  .
+sudo docker run -p 8080:8080  -tid golangdockertest
+
+# grab the DNS and then test....
+
+sudo apt install zip
+zip files.zip *
+
+ftp files.zip to the downloads directory.
+prepare IAM role 
+
+go to "IAM"
+
+click on "roles" (create a role)
+IAM -> roles -> create role
+
+do NOT create a policy  = select an existing policy
+
+name your role. 
+
+next search on "elastic beanstalk" 
+
+Elastic Beanstalk -> applications -> create application
+
+application code (choose file ) choose your zip utility. 
+
+
+
+  
